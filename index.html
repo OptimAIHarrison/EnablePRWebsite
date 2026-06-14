@@ -251,7 +251,6 @@
     display:flex;align-items:center;gap:12px;
   }
   .logo span{color:var(--red);}
-  .logo-mark{display:block;flex-shrink:0;}
   .nav{display:flex;align-items:center;gap:28px;font-size:0.84rem;font-weight:500;}
   .nav a{position:relative;padding:4px 0;transition:color .2s;}
   .nav a:hover{color:var(--red);}
@@ -394,6 +393,21 @@
     padding-bottom:4px;
     transition:border-color .25s, color .25s;
   }
+  .cta-strip{
+    display:flex;align-items:center;justify-content:center;gap:24px;
+    flex-wrap:wrap;text-align:center;
+    margin-top:64px;padding-top:48px;
+    border-top:1px solid var(--line);
+  }
+  .cta-strip p{
+    font-family:'Fraunces',serif;font-weight:600;
+    font-size:1.4rem;color:var(--ink);margin:0;
+  }
+  .cta-strip p .em{font-style:italic;color:var(--red);font-weight:400;}
+  .ready .cta-strip, .industries .cta-strip{border-top-color:rgba(255,255,255,0.14);}
+  .ready .cta-strip p, .industries .cta-strip p{color:var(--paper);}
+  .industries .cta-strip .btn-primary{background:#15161A;box-shadow:none;}
+  .industries .cta-strip .btn-primary:hover{background:#fff;color:#15161A;}
   .btn-secondary:hover{border-color:var(--red);color:var(--red);}
 
   @keyframes fade-up{
@@ -961,7 +975,7 @@
         story into headlines.
       </p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn-primary">
+        <a href="https://enableprwebsite-production.up.railway.app/#contact" class="btn-primary">
           Start your campaign
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -1018,12 +1032,20 @@
         <p>Eyes fixed on fame, with a story the public deserves to hear about.</p>
       </div>
     </div>
+    <div class="cta-strip reveal">
+      <p>Recognise yourself in one of these? <span class="em">Let's talk.</span></p>
+      <a href="https://enableprwebsite-production.up.railway.app/#contact" class="btn-primary">
+        Start your campaign
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- WHY PR -->
 <section class="why" id="why">
-  <div class="container why-grid">
+  <div class="container">
+  <div class="why-grid">
     <div class="why-copy reveal">
       <p class="eyebrow">Why PR?</p>
       <h2>Good PR isn't a <span class="em">nice-to-have.</span><br>It's essential.</h2>
@@ -1059,6 +1081,14 @@
         <span class="stat-num">12</span>
         <span class="stat-label">Industries covered, from B2B and tech to health, hospitality, sustainability and the arts.</span>
       </div>
+    </div>
+  </div>
+    <div class="cta-strip reveal">
+      <p>Convinced PR is the missing piece? <span class="em">Let's build it.</span></p>
+      <a href="https://enableprwebsite-production.up.railway.app/#contact" class="btn-primary">
+        Start your campaign
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
   </div>
 </section>
@@ -1209,6 +1239,13 @@
         </div>
       </div>
     </div>
+    <div class="cta-strip reveal">
+      <p>Not sure which package fits? <span class="em">We'll figure it out together.</span></p>
+      <a href="https://enableprwebsite-production.up.railway.app/#contact" class="btn-primary">
+        Start your campaign
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -1237,6 +1274,13 @@
       <span class="industry-chip">HR & Employment</span>
       <span class="industry-chip">Music, Arts & Entertainment</span>
       <span class="industry-chip">Not-for-Profit</span>
+    </div>
+    <div class="cta-strip reveal">
+      <p>Don't see your industry listed? <span class="em">Ask anyway.</span></p>
+      <a href="https://enableprwebsite-production.up.railway.app/#contact" class="btn-primary">
+        Start your campaign
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
   </div>
 </section>
@@ -1459,18 +1503,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="container footer-inner">
-    <a href="#top" class="logo" aria-label="enablePR home">
-      <svg class="logo-mark" width="28" height="28" viewBox="0 0 110 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="0" y="0" width="8" height="110" fill="#15161A"/>
-        <rect x="0" y="0" width="58" height="8" fill="#15161A"/>
-        <rect x="0" y="102" width="58" height="8" fill="#15161A"/>
-        <g transform="translate(26,40)">
-          <path d="M0 11 C0 4 4 0 11 0 L11 6 C7 6 6 8 6 12 C10 12 13 15 13 19 C13 24 9 28 4 28 C1 28 0 20 0 16 Z" fill="#FF4D3D"/>
-          <path d="M16 11 C16 4 20 0 27 0 L27 6 C23 6 22 8 22 12 C26 12 29 15 29 19 C29 24 25 28 20 28 C17 28 16 20 16 16 Z" fill="#FF4D3D"/>
-        </g>
-      </svg>
-      enable<span>PR</span>
-    </a>
+    <a href="#top" class="logo" aria-label="enablePR home">enable<span>PR</span></a>
     <a href="https://www.linkedin.com/in/kane-lewis-publicrelations/" target="_blank" rel="noopener" class="nav-icon" aria-label="Kane Lewis on LinkedIn" title="Connect on LinkedIn">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
     </a>
