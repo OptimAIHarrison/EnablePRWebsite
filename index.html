@@ -12,6 +12,12 @@
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.enablepr.com/">
 
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+
 <!-- Open Graph / Facebook / LinkedIn -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.enablepr.com/">
@@ -246,7 +252,7 @@
   }
   .logo span{color:var(--red);}
   .logo-mark{display:block;flex-shrink:0;}
-  .nav{display:flex;align-items:center;gap:36px;font-size:0.92rem;font-weight:500;}
+  .nav{display:flex;align-items:center;gap:28px;font-size:0.84rem;font-weight:500;}
   .nav a{position:relative;padding:4px 0;transition:color .2s;}
   .nav a:hover{color:var(--red);}
   .nav a:not(.cta-btn):not(.nav-icon)::after{
@@ -264,12 +270,13 @@
   .nav-icon:hover{background:var(--navy);border-color:var(--navy);color:#fff;}
   .cta-btn{
     background:var(--ink);color:var(--paper);
-    padding:14px 28px;border-radius:6px;
+    padding:14px 32px;border-radius:6px;
     font-family:'JetBrains Mono',monospace;
-    font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;
+    font-size:0.74rem;letter-spacing:0.08em;text-transform:uppercase;
     transition:background .2s, transform .2s;
     border:1px solid var(--ink);
     margin-left:12px;
+    display:inline-block;
   }
   .cta-btn:hover{background:var(--red);border-color:var(--red);transform:translateY(-1px);}
 
@@ -886,18 +893,7 @@
 <!-- MASTHEAD -->
 <header class="masthead">
   <div class="masthead-top">
-    <a href="#top" class="logo" aria-label="enablePR home">
-      <svg class="logo-mark" width="34" height="34" viewBox="0 0 110 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="0" y="0" width="8" height="110" fill="#15161A"/>
-        <rect x="0" y="0" width="58" height="8" fill="#15161A"/>
-        <rect x="0" y="102" width="58" height="8" fill="#15161A"/>
-        <g transform="translate(26,40)">
-          <path d="M0 11 C0 4 4 0 11 0 L11 6 C7 6 6 8 6 12 C10 12 13 15 13 19 C13 24 9 28 4 28 C1 28 0 20 0 16 Z" fill="#FF4D3D"/>
-          <path d="M16 11 C16 4 20 0 27 0 L27 6 C23 6 22 8 22 12 C26 12 29 15 29 19 C29 24 25 28 20 28 C17 28 16 20 16 16 Z" fill="#FF4D3D"/>
-        </g>
-      </svg>
-      enable<span>PR</span>
-    </a>
+    <a href="#top" class="logo" aria-label="enablePR home">enable<span>PR</span></a>
     <nav class="nav" id="nav">
       <a href="#ready">Who's Ready</a>
       <a href="#why">Why PR</a>
@@ -969,7 +965,7 @@
           Start your campaign
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#why" class="btn-secondary">See the results</a>
+        <a href="#work" class="btn-secondary">See the results</a>
       </div>
     </div>
     <div class="hero-visual">
